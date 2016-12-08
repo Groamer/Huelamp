@@ -195,3 +195,16 @@ C:\Users\Vincent Brands\Desktop\HueLamps-master\HueLamps\HueLamps\obj\ARM\Debug\
 C:\Users\Vincent Brands\Desktop\HueLamps-master\HueLamps\HueLamps\obj\ARM\Debug\qualifiers.txt.intermediate
 C:\Users\Vincent Brands\Desktop\HueLamps-master\HueLamps\HueLamps\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Vincent Brands\Desktop\HueLamps-master\HueLamps\HueLamps\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\HueLamps.csprojResolveAssemblyReference.cache
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\App.g.i.cs
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\App.g.cs
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\MainPage.g.i.cs
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\MainPage.g.cs
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\XamlTypeInfo.g.cs
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\App.xaml
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\MainPage.xaml
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\App.xbf
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\MainPage.xbf
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\XamlSaveStateFile.xml
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\HueLamps.exe
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\ARM\Debug\HueLamps.pdb
