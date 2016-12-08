@@ -26,13 +26,13 @@ namespace HueLamps
 
     
 		public static ApplicationDataContainer LOCAL_SETTINGS = ApplicationData.Current.LocalSettings;
-        private APIfixer api = null;
-        private ObservableCollection<Lamp> totallamps = new ObservableCollection<Lamp>();
+        private API api = null;
+        private ObservableCollection<Bulb> totalBulbs = new ObservableCollection<Bulb>();
 
 		public MainPage()
 		{
 			this.InitializeComponent();
-            api = new APIfixer(new Networkfixer());
+            api = new API(new Network());
         }
 
 	
@@ -40,25 +40,25 @@ namespace HueLamps
         {
             api.Register();
             
-            ObservableCollection<Lamp> lamps = await api.GetAllLights(totallamps);
+            ObservableCollection<Bulb> bulbs = await api.GetAllLights(totalBulbs);
             listBox.Items.Clear();
-            foreach (Lamp lamp in lamps)
+            foreach (Bulb bulb in bulbs)
             {
-                listBox.Items.Add("Lamp " + lamp.id);
-                lamp.on = true;
-                api.SetLightState(lamp);
-                lamp.hue = 65000; //hue 0 - 65280
-                lamp.bri = 254; //brightness 0 - 254
-                lamp.sat = 254; //saturation 0 - 254
-                api.SetLightValues(lamp);
+                listBox.Items.Add("Lamp " + bulb.id);
+                bulb.on = true;
+                api.SetLightState(bulb);
+                bulb.hue = 65000; //hue 0 - 65280
+                bulb.bri = 254; //brightness 0 - 254
+                bulb.sat = 254; //saturation 0 - 254
+                api.SetLightValues(bulb);
             }
         }
 
         private async void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Lamp lamp = (Lamp) listBox.SelectedItem;
-            lamp.@on = false;
-            api.SetLightState(lamp);
+            Bulb bulb = (Bulb) listBox.SelectedItem;
+            bulb.@on = false;
+            api.SetLightState(bulb);
         }
     }
 }

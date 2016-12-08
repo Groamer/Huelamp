@@ -10,13 +10,12 @@ using Windows.Storage;
 
 namespace HueLamps
 {
-	public class APIfixer
+	public class API
 	{
-
-		Networkfixer nwf;
-		public APIfixer(Networkfixer nwf)
+		Network network;
+		public API(Network network)
 		{
-			this.nwf = nwf;
+			this.network = network;
             
 		}
 
@@ -24,7 +23,7 @@ namespace HueLamps
 		{
 			try
 			{
-				var json = await nwf.RegisterName("Hue", "Remco");
+				var json = await network.RegisterName("Hue", "Groamer");
 				json = json.Replace("[", "").Replace("]", "");
 				JObject o = JObject.Parse(json);
 				string id = o["success"]["username"].ToString();
@@ -32,38 +31,38 @@ namespace HueLamps
 			}
 			catch (Exception e)
 			{
-				Debug.WriteLine("Could not register.");
+				Debug.WriteLine("Could not register: " + e);
 			}
 		}
 
-		public async void SetLightState(Lamp l)
+		public async void SetLightState(Bulb l)
 		{
-			var json = await nwf.SetLightInfo(l.id, $"{{\"on\": {((l.on) ? "true" : "false")}}}");
+			var json = await network.SetLightInfo(l.id, $"{{\"on\": {((l.on) ? "true" : "false")}}}");
 			Debug.WriteLine(json);
 		}
 
-		public async void SetLightValues(Lamp l)
+		public async void SetLightValues(Bulb l)
 		{
 			if (l.on)
 			{
 				Debug.WriteLine(l.hue);
-				var json = await nwf.SetLightInfo(l.id, $"{{\"bri\": {l.bri},\"hue\": {(l.hue)},\"sat\": {l.sat}}}");
+				var json = await network.SetLightInfo(l.id, $"{{\"bri\": {l.bri},\"hue\": {(l.hue)},\"sat\": {l.sat}}}");
 				Debug.WriteLine(json);
 			}
 
 		}
 
-		public async Task<ObservableCollection<Lamp>> GetAllLights(ObservableCollection<Lamp> alllights)
+		public async Task<ObservableCollection<Bulb>> GetAllLights(ObservableCollection<Bulb> allLights)
 		{
 			try
 			{
-				var json = await nwf.AllLights();
+				var json = await network.AllLights();
 				JObject o = JObject.Parse(json);
 				foreach (var i in o)
 				{
 					var light = o["" + i.Key];
 					var state = light["state"];
-					alllights.Add(new Lamp() { api = this, id = Int32.Parse(i.Key), bri = (int)state["bri"], on = ((string)state["on"]).ToLower() == "true" ? true : false, hue = (int)state["hue"], sat = (int)state["sat"], name = (string)light["name"], type = (string)light["type"] });
+					allLights.Add(new Bulb() { api = this, id = Int32.Parse(i.Key), bri = (int)state["bri"], on = ((string)state["on"]).ToLower() == "true" ? true : false, hue = (int)state["hue"], sat = (int)state["sat"], name = (string)light["name"], type = (string)light["type"] });
 					Debug.WriteLine("Added light number " + i + " " + state["on"]);
 				}
 
@@ -83,7 +82,7 @@ namespace HueLamps
 				Debug.WriteLine(e.StackTrace);
 				Debug.WriteLine("Could not get all lights.");
 			}
-            return alllights;
+            return allLights;
 		}
 	}
 }
