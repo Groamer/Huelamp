@@ -10,9 +10,9 @@ using Windows.Web.Http;
 
 namespace HueLamps
 {
-	public class Networkfixer
+	public class Network
 	{
-		public Networkfixer()
+		public Network()
 		{
 		}
 

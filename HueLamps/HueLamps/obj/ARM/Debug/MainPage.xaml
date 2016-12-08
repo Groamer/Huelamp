@@ -8,9 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:ConnectionId='1' x:Name="textBox" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"                                  />
-        <Button x:ConnectionId='2' x:Name="button" Content="Register" HorizontalAlignment="Left" Margin="128,36,0,0" VerticalAlignment="Top"                     />
-        <ListBox x:ConnectionId='3' x:Name="listBox" HorizontalAlignment="Left" Height="495" Margin="35,106,0,0" VerticalAlignment="Top" Width="289" IsSynchronizedWithCurrentItem="False" />
+        <TextBox x:ConnectionId='1' x:Name="textBox" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"                                   Width="282"/>
+        <Button x:ConnectionId='2' x:Name="button" Content="Register" HorizontalAlignment="Left" Margin="37,89,0,0" VerticalAlignment="Top"                     />
+        <ListBox x:ConnectionId='3' x:Name="listBox" HorizontalAlignment="Left" Height="477" Margin="23,143,0,0" VerticalAlignment="Top" Width="308" IsSynchronizedWithCurrentItem="False"                                             />
 
     </Grid>
 </Page>

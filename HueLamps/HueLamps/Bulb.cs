@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace HueLamps
 {
-    public class Lamp
+    public class Bulb
     {
         public int sat;
         public int hue;
         public bool on;
         public int bri;
         public int id;
-        public APIfixer api;
+        public API api;
         public string name;
         public string type;
     }
