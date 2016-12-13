@@ -38,16 +38,16 @@ namespace HueLamps
 		public async void SetLightState(Bulb l)
 		{
 			var json = await network.SetLightInfo(l.id, $"{{\"on\": {((l.on) ? "true" : "false")}}}");
-			Debug.WriteLine(json);
+			//Debug.WriteLine(json);
 		}
 
 		public async void SetLightValues(Bulb l)
 		{
 			if (l.on)
 			{
-				Debug.WriteLine(l.hue);
+				//Debug.WriteLine(l.hue);
 				var json = await network.SetLightInfo(l.id, $"{{\"bri\": {l.bri},\"hue\": {(l.hue)},\"sat\": {l.sat}}}");
-				Debug.WriteLine(json);
+				//Debug.WriteLine(json);
 			}
 
 		}
@@ -63,7 +63,7 @@ namespace HueLamps
 					var light = o["" + i.Key];
 					var state = light["state"];
 					allLights.Add(new Bulb() { api = this, id = Int32.Parse(i.Key), bri = (int)state["bri"], on = ((string)state["on"]).ToLower() == "true" ? true : false, hue = (int)state["hue"], sat = (int)state["sat"], name = (string)light["name"], type = (string)light["type"] });
-					Debug.WriteLine("Added light number " + i + " " + state["on"]);
+					//Debug.WriteLine("Added light number " + i + " " + state["on"]);
 				}
 
 				//lightlist = lightlist.OrderBy(q => q.Name).ToList();
