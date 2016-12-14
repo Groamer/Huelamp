@@ -588,3 +588,8 @@ C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug
 C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\LampPage.xbf
+C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\LampPage.g.i.cs
+C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\LampPage.g.cs
+C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\LampPage.xaml
+C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\LampPage.xbf
