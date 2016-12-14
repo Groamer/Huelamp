@@ -41,15 +41,17 @@ namespace HueLamps
             api.Register();
             
             ObservableCollection<Bulb> bulbs = await api.GetAllLights(totalBulbs);
+            HueCalculator hue = new HueCalculator();
             listBox.Items.Clear();
             foreach (Bulb bulb in bulbs)
             {
                 listBox.Items.Add("Lamp " + bulb.id);
                 bulb.on = true;
                 api.SetLightState(bulb);
-                bulb.hue = 65000; //hue 0 - 65280
+                //bulb.hue = 18000; //hue 0 - 65280
+                bulb.hue = hue.CalculateHue(0, 0, 128);
                 bulb.bri = 254; //brightness 0 - 254
-                bulb.sat = 254; //saturation 0 - 254
+                bulb.sat = 255; //saturation 0 - 255
                 api.SetLightValues(bulb);
             }
         }

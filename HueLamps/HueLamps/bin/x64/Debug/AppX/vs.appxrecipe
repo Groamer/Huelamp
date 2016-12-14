@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-08T11:37:00.949</Modified>
+      <Modified>2016-12-13T17:14:45.962</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\HueLamps.exe">
       <PackagePath>entrypoint\HueLamps.exe</PackagePath>
-      <Modified>2016-12-08T11:36:20.719</Modified>
+      <Modified>2016-12-13T17:14:45.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -510,11 +510,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-08T11:37:00.680</Modified>
+      <Modified>2016-12-08T12:16:54.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\Core\HueLamps.exe">
       <PackagePath>HueLamps.exe</PackagePath>
-      <Modified>2016-12-08T11:37:00.947</Modified>
+      <Modified>2016-12-13T17:14:45.959</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
