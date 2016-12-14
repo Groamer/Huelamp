@@ -8,9 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" TextChanged="textBox_TextChanged" Width="282"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="282" />
         <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Margin="37,89,0,0" VerticalAlignment="Top" Click="button_Click"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="477" Margin="23,143,0,0" VerticalAlignment="Top" Width="308" IsSynchronizedWithCurrentItem="False" SelectionChanged="listBox_SelectionChanged" />
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="370" Margin="23,250,0,0" VerticalAlignment="Top" Width="308" IsSynchronizedWithCurrentItem="False" SelectionChanged="listBox_SelectionChanged" />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="45,15,0,0" TextWrapping="Wrap" Text="Enter username below" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="On/Off" HorizontalAlignment="Left" Margin="36,163,0,0" VerticalAlignment="Top" Height="37" Width="85" Click="button1_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="36,139,0,0" TextWrapping="Wrap" Text="All lamps" VerticalAlignment="Top"/>
+        <Button x:Name="button2" Content="Produtctivity" HorizontalAlignment="Left" Margin="138,163,0,0" VerticalAlignment="Top" Height="37" Width="106"/>
 
     </Grid>
 </Page>

@@ -56,9 +56,20 @@ namespace HueLamps
 
         private async void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Bulb bulb = (Bulb) listBox.SelectedItem;
+            Bulb bulb = totalBulbs.ElementAt(listBox.SelectedIndex);
             bulb.@on = false;
             api.SetLightState(bulb);
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (Bulb b in totalBulbs)
+            {
+                b.@on = !b.@on;
+                api.SetLightState(b);
+            }
+        }
     }
+
+   
 }
