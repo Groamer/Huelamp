@@ -38,6 +38,12 @@ namespace HueLamps
 	
         private async void button_Click(object sender, RoutedEventArgs e)
         {
+            //TEMP CODE FOR RGB. RGB MUST BE SET BY USER EVENTUALLY
+            int red = 40;
+            int green = 120;
+            int blue = 200;
+            //END TEMP CODE
+
             api.Register();
             
             ObservableCollection<Bulb> bulbs = await api.GetAllLights(totalBulbs);
@@ -48,10 +54,15 @@ namespace HueLamps
                 listBox.Items.Add("Lamp " + bulb.id);
                 bulb.on = true;
                 api.SetLightState(bulb);
-                //bulb.hue = 18000; //hue 0 - 65280
-                bulb.hue = hue.CalculateHue(0, 0, 128);
+                bulb.hue = hue.CalculateHue(red, green, blue);
+                bulb.bri = hue.CalculateLum(red, green, blue);
+                bulb.sat = hue.CalculateSat(red, green, blue);
+
+                /*OLD CODE
                 bulb.bri = 254; //brightness 0 - 254
                 bulb.sat = 255; //saturation 0 - 255
+                */
+
                 api.SetLightValues(bulb);
             }
         }
