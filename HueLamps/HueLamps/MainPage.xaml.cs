@@ -39,9 +39,9 @@ namespace HueLamps
         private async void button_Click(object sender, RoutedEventArgs e)
         {
             //TEMP CODE FOR RGB. RGB MUST BE SET BY USER EVENTUALLY
-            int red = 40;
-            int green = 120;
-            int blue = 200;
+            int red = 255;
+            int green = 0;
+            int blue = 1;
             //END TEMP CODE
 
             api.Register();

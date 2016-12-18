@@ -9,15 +9,6 @@ namespace HueLamps
         {
         }
 
-        /*hue 
-        value:
-        red = 0 
-        yellow = 12750
-        green = 25500
-        blue = 46920
-        purple = 56100
-        red = 65280*/
-
         public int CalculateHue(int red, int green, int blue)
         {
             double r = (double)red / 255;
@@ -46,15 +37,15 @@ namespace HueLamps
             //check color values
             if (max == r)
             {
-                hue = (double)(g - b) / (max - min);
+                hue = (g - b) / (max - min);
             }
             else if (max == g)
             {
-                hue = (double)2 + ((b - r) / (max - min));
+                hue = 2 + ((b - r) / (max - min));
             }
             else
             {
-                hue = (double)4 + ((r - g) / (max - min));
+                hue = 4 + ((r - g) / (max - min));
             }
 
             //set hue value
@@ -65,7 +56,25 @@ namespace HueLamps
                 hue = hue + 360;
             }
 
-            hue = hue * 182;
+            //convert hue
+            if (hue >= 0 && hue <= 120)
+            {
+                double multiplier = (double)25500 / 120;
+                hue = hue * multiplier;
+                hue = Math.Round(hue);
+            }
+            if (hue > 120 && hue <= 240)
+            {
+                double multiplier = (double)46920 / 240;
+                hue = hue * multiplier;
+                hue = Math.Round(hue);
+            }
+            if (hue > 240 && hue <= 360)
+            {
+                double multiplier = (double)65280 / 360;
+                hue = hue * multiplier;
+                hue = Math.Round(hue);
+            }
 
             return (int)(hue);
         }
@@ -98,7 +107,6 @@ namespace HueLamps
             //calculate luminace
             lum = Math.Round(((max + min) / 2) * 254);
 
-            System.Diagnostics.Debug.WriteLine("LUM VAL: " + lum);
             return (int)(lum);
         }
 
@@ -130,11 +138,10 @@ namespace HueLamps
             if (min == max)
             {
                 sat = 0;
-                System.Diagnostics.Debug.WriteLine("KUTFUCKSHIT");
             }
             else
             {
-                if ((CalculateLum(red, green, blue) < 127))
+                if ((CalculateLum(red, green, blue) <= 127))
                 {
                     sat = Math.Round((max - min) / (max + min) * 255);
                 }
@@ -144,7 +151,6 @@ namespace HueLamps
                 }
             }
 
-            System.Diagnostics.Debug.WriteLine("SAT VAL: " + sat);
             return (int)sat;
         }
     }
