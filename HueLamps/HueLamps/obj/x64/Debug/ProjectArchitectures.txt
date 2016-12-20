@@ -1,1 +1,1 @@
-C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\HueLamps.csproj;x64
+C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\HueLamps.csproj;x64

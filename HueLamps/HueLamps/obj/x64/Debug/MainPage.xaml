@@ -5,12 +5,17 @@
     xmlns:local="using:HueLamps"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" NavigationCacheMode="Required">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:ConnectionId='1' x:Name="textBox" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"                                   Width="282"/>
+        <TextBox x:ConnectionId='1' x:Name="textBox" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="282" />
         <Button x:ConnectionId='2' x:Name="button" Content="Register" HorizontalAlignment="Left" Margin="37,89,0,0" VerticalAlignment="Top"                     />
-        <ListBox x:ConnectionId='3' x:Name="listBox" HorizontalAlignment="Left" Height="477" Margin="23,143,0,0" VerticalAlignment="Top" Width="308" IsSynchronizedWithCurrentItem="False"                                             />
+        <ListBox x:ConnectionId='3' x:Name="listBox" HorizontalAlignment="Left" Height="370" Margin="23,250,0,0" VerticalAlignment="Top" Width="308" IsSynchronizedWithCurrentItem="False"                                             />
+        <TextBlock x:ConnectionId='4' x:Name="textBlock" HorizontalAlignment="Left" Margin="45,15,0,0" TextWrapping="Wrap" Text="Enter username below" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='5' x:Name="button1" Content="On" HorizontalAlignment="Left" Margin="36,163,0,0" VerticalAlignment="Top" Height="37" Width="56"                      />
+        <TextBlock x:ConnectionId='6' x:Name="textBlock1" HorizontalAlignment="Left" Margin="36,139,0,0" TextWrapping="Wrap" Text="All lamps" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='7' x:Name="button2" Content="Produtctivity" HorizontalAlignment="Left" Margin="189,163,0,0" VerticalAlignment="Top" Height="37" Width="106"                       RenderTransformOrigin="1.594,0.5"/>
+        <Button x:ConnectionId='8' x:Name="button3" Content="Off" HorizontalAlignment="Left" Margin="109,163,0,0" VerticalAlignment="Top" Height="37" Width="64"                      />
 
     </Grid>
 </Page>

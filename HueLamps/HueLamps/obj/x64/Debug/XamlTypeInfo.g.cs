@@ -132,15 +132,17 @@ namespace HueLamps.HueLamps_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "HueLamps.MainPage";
+            _typeNameTable = new string[4];
+            _typeNameTable[0] = "HueLamps.BulbPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "HueLamps.MainPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::HueLamps.MainPage);
+            _typeTable = new global::System.Type[4];
+            _typeTable[0] = typeof(global::HueLamps.BulbPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::HueLamps.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +177,8 @@ namespace HueLamps.HueLamps_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::HueLamps.MainPage(); }
+        private object Activate_0_BulbPage() { return new global::HueLamps.BulbPage(); }
+        private object Activate_3_MainPage() { return new global::HueLamps.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +190,9 @@ namespace HueLamps.HueLamps_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  HueLamps.MainPage
+            case 0:   //  HueLamps.BulbPage
                 userType = new global::HueLamps.HueLamps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_BulbPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +203,13 @@ namespace HueLamps.HueLamps_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::HueLamps.HueLamps_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  HueLamps.MainPage
+                userType = new global::HueLamps.HueLamps_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
