@@ -9,7 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="27,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.137,-0.378" Click="backButton_Click"/>
-        <Button x:Name="toggleButton" Content="On/off" HorizontalAlignment="Left" Margin="29,93,0,0" VerticalAlignment="Top" Click="toggleButton_Click"/>
+        <Button x:Name="toggleButton" Content="On/off" HorizontalAlignment="Left" Margin="25,86,0,0" VerticalAlignment="Top" Click="toggleButton_Click"/>
+        <Slider x:Name="sliderBri" HorizontalAlignment="Left" Margin="26,166,0,0" VerticalAlignment="Top" Width="293" Height="63" Maximum="255" Minimum="0" ValueChanged="slider_ValueChanged"/>
+        <Slider x:Name="sliderRed" HorizontalAlignment="Left" Margin="27,233,0,0" VerticalAlignment="Top" Width="294" Maximum="255" Minimum="0" ValueChanged="sliderRed_ValueChanged"/>
+        <Slider x:Name="sliderBlue" HorizontalAlignment="Left" Margin="29,297,0,0" VerticalAlignment="Top" Width="292" Maximum="255" Minimum="0" ValueChanged="sliderBlue_ValueChanged"/>
+        <Slider x:Name="sliderGreen" HorizontalAlignment="Left" Margin="29,350,0,0" VerticalAlignment="Top" Width="291" Maximum="255" Minimum="0" ValueChanged="sliderGreen_ValueChanged"/>
 
     </Grid>
 </Page>
