@@ -47,3 +47,6 @@ Temporary Items
 .apdisk
 HueLamps/.vs/HueLamps/v14/.suo
 HueLamps/HueLamps/bin/x64/Debug/AppX/vs.appxrecipe
+
+# Folders and debug which visual studio makes to annoy developpers
+Huelamp\HueLamps\HueLamps\bin\ARM\Debug
