@@ -37,19 +37,16 @@ namespace HueLamps
             api = new API(new Network());
         }
 
-	
+
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
             //TEMP CODE FOR RGB. RGB MUST BE SET BY USER EVENTUALLY
             int red = 255;
             int green = 0;
             int blue = 1;
             //END TEMP CODE
-=======
-           
->>>>>>> origin/LampPage
+
 
             api.Register();
 
@@ -79,10 +76,13 @@ namespace HueLamps
 
 
 
+
+
         private async void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            currentBulb= totalBulbs.ElementAt(listBox.SelectedIndex);
-            
+            currentBulb = totalBulbs.ElementAt(listBox.SelectedIndex);
+            Frame.Navigate(typeof(BulbPage), null);
+
         }
 
         //toggles all lights on 
@@ -98,7 +98,7 @@ namespace HueLamps
 
             }
         }
-        
+
         //turns all lights off
         private void button3_Click(object sender, RoutedEventArgs e)
         {
@@ -130,8 +130,15 @@ namespace HueLamps
             }
         }
 
-       
-    }
+        private void fillList()
+        {
+            foreach (Bulb b in totalBulbs)
+            {
+                listBox.Items.Add("Lamp " + b.id);
+            }
+        }
 
-   
+
+        
+    }
 }
