@@ -24,7 +24,7 @@ namespace HueLamps
     {
         private Bulb currentBulb = MainPage.currentBulb;
         private HueCalculator calc = new HueCalculator();
-        int red = 0;
+        private int Red { get; set; }
         int green = 0;
         int blue = 1;
 
@@ -57,29 +57,39 @@ namespace HueLamps
 
         private void sliderRed_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            red = (int)sliderRed.Value;
-            currentBulb.hue = calc.CalculateHue(red, green, blue);
-            currentBulb.bri = calc.CalculateLum(red, green, blue);
-            currentBulb.sat = calc.CalculateSat(red, green, blue);
+            Red = (int)sliderRed.Value;
+            currentBulb.hue = calc.CalculateHue(Red, green, blue);
+            currentBulb.bri = calc.CalculateLum(Red, green, blue);
+            currentBulb.sat = calc.CalculateSat(Red, green, blue);
             MainPage.api.SetLightValues(currentBulb);
         }
 
         private void sliderBlue_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
             blue= (int)sliderBlue.Value;
-            currentBulb.hue = calc.CalculateHue(red, green, blue);
-            currentBulb.bri = calc.CalculateLum(red, green, blue);
-            currentBulb.sat = calc.CalculateSat(red, green, blue);
+            currentBulb.hue = calc.CalculateHue(Red, green, blue);
+            currentBulb.bri = calc.CalculateLum(Red, green, blue);
+            currentBulb.sat = calc.CalculateSat(Red, green, blue);
             MainPage.api.SetLightValues(currentBulb);
         }
 
         private void sliderGreen_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
             green = (int)sliderGreen.Value;
-            currentBulb.hue = calc.CalculateHue(red, green, blue);
-            currentBulb.bri = calc.CalculateLum(red, green, blue);
-            currentBulb.sat = calc.CalculateSat(red, green, blue);
+            currentBulb.hue = calc.CalculateHue(Red, green, blue);
+            currentBulb.bri = calc.CalculateLum(Red, green, blue);
+            currentBulb.sat = calc.CalculateSat(Red, green, blue);
             MainPage.api.SetLightValues(currentBulb);
+        }
+
+        private void image_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (currentBulb.@on)
+                currentBulb.@on = false;
+            else
+                currentBulb.@on = true;
+            MainPage.api.SetLightState(currentBulb);
+
         }
     }
 }
