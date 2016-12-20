@@ -22,6 +22,7 @@ namespace HueLamps
     /// </summary>
     public sealed partial class BulbPage : Page
     {
+        private Bulb currentBulb = MainPage.currentBulb;
         public BulbPage()
         {
             this.InitializeComponent();
@@ -31,6 +32,15 @@ namespace HueLamps
         {
             if (Frame.CanGoBack)
                 Frame.GoBack();
+        }
+
+        private void toggleButton_Click(object sender, RoutedEventArgs e)
+        { 
+            if (currentBulb.@on)
+                currentBulb.@on = false;
+            else
+                currentBulb.@on = true;
+                MainPage.api.SetLightState(currentBulb);
         }
     }
 }

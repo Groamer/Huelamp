@@ -9,6 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="27,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.137,-0.378" Click="backButton_Click"/>
+        <Button x:Name="toggleButton" Content="On/off" HorizontalAlignment="Left" Margin="29,93,0,0" VerticalAlignment="Top" Click="toggleButton_Click"/>
 
     </Grid>
 </Page>

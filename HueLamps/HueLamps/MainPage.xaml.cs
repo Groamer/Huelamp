@@ -26,7 +26,7 @@ namespace HueLamps
 
 
         public static ApplicationDataContainer LOCAL_SETTINGS = ApplicationData.Current.LocalSettings;
-        private API api = null;
+        public static API api = null;
         private ObservableCollection<Bulb> totalBulbs = new ObservableCollection<Bulb>();
         private bool appStarted = false;
         public static Bulb currentBulb;
@@ -81,7 +81,7 @@ namespace HueLamps
         private async void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             currentBulb = totalBulbs.ElementAt(listBox.SelectedIndex);
-            Frame.Navigate(typeof(BulbPage), null);
+            Frame.Navigate(typeof(BulbPage), currentBulb);
 
         }
 
@@ -129,15 +129,6 @@ namespace HueLamps
                 }
             }
         }
-
-        private void fillList()
-        {
-            foreach (Bulb b in totalBulbs)
-            {
-                listBox.Items.Add("Lamp " + b.id);
-            }
-        }
-
 
         
     }
