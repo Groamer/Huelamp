@@ -8,14 +8,14 @@
 
   <Identity
     Name="835c320c-8940-4448-8ddb-c15b869ff674"
-    Publisher="CN=Aareschluchtje"
+    Publisher="CN=VincentTom"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="835c320c-8940-4448-8ddb-c15b869ff674" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>HueLamps</DisplayName>
-    <PublisherDisplayName>Aareschluchtje</PublisherDisplayName>
+    <PublisherDisplayName>VincentTom</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
