@@ -24,9 +24,12 @@ namespace HueLamps
     {
         private Bulb currentBulb = MainPage.currentBulb;
         private HueCalculator calc = new HueCalculator();
+
         private int Red { get; set; }
         int green = 0;
         int blue = 0;
+        string abc =" hello";
+
 
         public BulbPage()
         {
@@ -35,7 +38,6 @@ namespace HueLamps
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Frame.CanGoBack)
                 Frame.GoBack();
         }
 
@@ -46,6 +48,7 @@ namespace HueLamps
             else
                 currentBulb.@on = true;
                 MainPage.api.SetLightState(currentBulb);
+            
         }
 
         //brightness slider
@@ -61,7 +64,9 @@ namespace HueLamps
             currentBulb.hue = calc.CalculateHue(Red, green, blue);
             currentBulb.bri = calc.CalculateLum(Red, green, blue);
             currentBulb.sat = calc.CalculateSat(Red, green, blue);
+            
             MainPage.api.SetLightValues(currentBulb);
+            textBlock.Text = Red + "";
         }
 
         private void sliderBlue_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
@@ -71,6 +76,7 @@ namespace HueLamps
             currentBulb.bri = calc.CalculateLum(Red, green, blue);
             currentBulb.sat = calc.CalculateSat(Red, green, blue);
             MainPage.api.SetLightValues(currentBulb);
+            textBlock_Copy1.Text = blue + "";
         }
 
         private void sliderGreen_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
@@ -80,15 +86,24 @@ namespace HueLamps
             currentBulb.bri = calc.CalculateLum(Red, green, blue);
             currentBulb.sat = calc.CalculateSat(Red, green, blue);
             MainPage.api.SetLightValues(currentBulb);
+            textBlock_Copy.Text = green + "";
         }
 
         private void image_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            /*
             if (currentBulb.@on)
                 currentBulb.@on = false;
             else
                 currentBulb.@on = true;
             MainPage.api.SetLightState(currentBulb);
+            */
+            sliderRed.Value = 100;
+
+        }
+
+        private void backButton_Click_1(object sender, RoutedEventArgs e)
+        {
 
         }
     }

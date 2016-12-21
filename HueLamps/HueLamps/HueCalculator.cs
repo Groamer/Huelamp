@@ -22,7 +22,7 @@ namespace HueLamps
             double hue = 0;
 
             //find max and min value
-            for (int i = 0; i < colors.Count; i ++)
+            for (int i = 0; i < colors.Count; i++)
             {
                 if (colors[i] > max)
                 {
@@ -30,10 +30,10 @@ namespace HueLamps
                 }
                 if (colors[i] < min)
                 {
-                    min = colors[i]; 
+                    min = colors[i];
                 }
             }
-            
+
             //check color values
             if (max == r)
             {
@@ -141,11 +141,12 @@ namespace HueLamps
             }
             else
             {
-                if ((CalculateLum(red, green, blue) <= 127))
+                int lum = CalculateLum(red, green, blue);
+                if (lum <= 127)
                 {
                     sat = Math.Round((max - min) / (max + min) * 255);
                 }
-                if ((CalculateLum(red, green, blue) > 127))
+                if (lum > 127)
                 {
                     sat = Math.Round((max - min) / (2 - max - min) * 255);
                 }

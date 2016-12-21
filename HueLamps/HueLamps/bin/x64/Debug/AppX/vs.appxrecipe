@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-20T13:39:15.082</Modified>
+      <Modified>2016-12-21T10:51:54.922</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\HueLamps.exe">
       <PackagePath>entrypoint\HueLamps.exe</PackagePath>
-      <Modified>2016-12-20T13:39:14.591</Modified>
+      <Modified>2016-12-21T10:51:54.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vincent Brands\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -468,6 +468,10 @@
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-12-20T10:34:49.038</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\Assets\On-off.jpg">
+      <PackagePath>Assets\On-off.jpg</PackagePath>
+      <Modified>2016-12-20T20:46:20.824</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-12-20T10:34:49.087</Modified>
@@ -508,7 +512,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\HueLamps.xr.xml">
       <PackagePath>HueLamps.xr.xml</PackagePath>
-      <Modified>2016-12-20T13:22:18.730</Modified>
+      <Modified>2016-12-21T10:43:16.905</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +521,11 @@
     <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-20T13:35:21.713</Modified>
+      <Modified>2016-12-21T10:51:54.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\Core\HueLamps.exe">
       <PackagePath>HueLamps.exe</PackagePath>
-      <Modified>2016-12-20T13:39:15.078</Modified>
+      <Modified>2016-12-21T10:51:54.916</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

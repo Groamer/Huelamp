@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="15,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.137,-0.378"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="15,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.137,-0.378" Click="backButton_Click"/>
         <Slider x:Name="sliderRed" Foreground="Red" Background="Red" HorizontalAlignment="Left" Margin="31,424,27,0" VerticalAlignment="Top" Width="302" Maximum="255" Minimum="0" ValueChanged="sliderRed_ValueChanged"/>
         <Slider x:Name="sliderGreen" Foreground="LawnGreen" Background="LawnGreen" HorizontalAlignment="Left" Margin="30,493,0,0" VerticalAlignment="Top" Width="301" Maximum="255" Minimum="0" ValueChanged="sliderGreen_ValueChanged"/>
         <Slider x:Name="sliderBlue" Foreground="DodgerBlue" Background="DodgerBlue" HorizontalAlignment="Left" Margin="31,554,29,0" VerticalAlignment="Top" Width="300" Maximum="255" Minimum="0" ValueChanged="sliderBlue_ValueChanged"/>
@@ -18,7 +18,6 @@
         <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="306,453,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" />
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="308,527,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" />
         <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="310,591,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" RenderTransformOrigin="0.667,0.638" />
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="212" Margin="13,412,0,0" VerticalAlignment="Top" Width="335"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="15,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332">
             <Run Text="RGB-Sliders"/>
             <LineBreak/>

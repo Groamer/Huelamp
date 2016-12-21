@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="HueLamps.BulbPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HueLamps"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='1' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="15,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.137,-0.378"                         />
+        <Slider x:ConnectionId='2' x:Name="sliderRed" Foreground="Red" Background="Red" HorizontalAlignment="Left" Margin="31,424,27,0" VerticalAlignment="Top" Width="302" Maximum="255" Minimum="0"                                      />
+        <Slider x:ConnectionId='3' x:Name="sliderGreen" Foreground="LawnGreen" Background="LawnGreen" HorizontalAlignment="Left" Margin="30,493,0,0" VerticalAlignment="Top" Width="301" Maximum="255" Minimum="0"                                        />
+        <Slider x:ConnectionId='4' x:Name="sliderBlue" Foreground="DodgerBlue" Background="DodgerBlue" HorizontalAlignment="Left" Margin="31,554,29,0" VerticalAlignment="Top" Width="300" Maximum="255" Minimum="0"                                       />
+        <TextBlock x:ConnectionId='5' x:Name="textBlock" HorizontalAlignment="Left" Margin="28,463,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" />
+        <TextBlock x:ConnectionId='6' x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="30,533,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" />
+        <TextBlock x:ConnectionId='7' x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="29,593,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" />
+        <TextBlock x:ConnectionId='8' x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="306,453,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" />
+        <TextBlock x:ConnectionId='9' x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="308,527,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" />
+        <TextBlock x:ConnectionId='10' x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="310,591,0,0" TextWrapping="Wrap" Text="255" VerticalAlignment="Top" RenderTransformOrigin="0.667,0.638" />
+        <TextBlock x:ConnectionId='11' x:Name="textBlock1" HorizontalAlignment="Left" Margin="15,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332">
+            <Run Text="RGB-Sliders"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="212" Margin="13,150,0,0" VerticalAlignment="Top" Width="335"/>
+        <TextBlock x:ConnectionId='12' x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="13,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332">
+            <Run Text="Pre-set colours"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Image x:ConnectionId='13' x:Name="image" HorizontalAlignment="Left" Height="133" Margin="210,11,0,0" VerticalAlignment="Top" Width="132" Source="Assets/On-off.jpg"                      />
+
+    </Grid>
+</Page>
+

@@ -82,6 +82,7 @@ namespace HueLamps
         {
             currentBulb = totalBulbs.ElementAt(listBox.SelectedIndex);
             Frame.Navigate(typeof(BulbPage), currentBulb);
+           
 
         }
 
@@ -126,10 +127,9 @@ namespace HueLamps
                     b.bri = 254; //brightness 0 - 254
                     b.sat = 0; //saturation 0 - 254
                     api.SetLightValues(b);
+                    
                 }
             }
         }
-
-        
     }
 }

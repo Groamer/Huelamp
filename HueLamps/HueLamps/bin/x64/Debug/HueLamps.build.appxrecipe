@@ -349,6 +349,9 @@
     <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\Assets\On-off.jpg">
+      <PackagePath>Assets\On-off.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
