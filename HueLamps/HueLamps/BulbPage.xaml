@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="15,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.137,-0.378" Click="backButton_Click"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="15,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.137,-0.378"/>
         <Slider x:Name="sliderRed" Foreground="Red" Background="Red" HorizontalAlignment="Left" Margin="31,424,27,0" VerticalAlignment="Top" Width="302" Maximum="255" Minimum="0" ValueChanged="sliderRed_ValueChanged"/>
         <Slider x:Name="sliderGreen" Foreground="LawnGreen" Background="LawnGreen" HorizontalAlignment="Left" Margin="30,493,0,0" VerticalAlignment="Top" Width="301" Maximum="255" Minimum="0" ValueChanged="sliderGreen_ValueChanged"/>
         <Slider x:Name="sliderBlue" Foreground="DodgerBlue" Background="DodgerBlue" HorizontalAlignment="Left" Margin="31,554,29,0" VerticalAlignment="Top" Width="300" Maximum="255" Minimum="0" ValueChanged="sliderBlue_ValueChanged"/>

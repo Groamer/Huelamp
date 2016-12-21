@@ -26,7 +26,7 @@ namespace HueLamps
         private HueCalculator calc = new HueCalculator();
         private int Red { get; set; }
         int green = 0;
-        int blue = 1;
+        int blue = 0;
 
         public BulbPage()
         {

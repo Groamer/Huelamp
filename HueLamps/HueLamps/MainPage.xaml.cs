@@ -58,14 +58,14 @@ namespace HueLamps
                 listBox.Items.Add("Lamp " + bulb.id);
                 bulb.on = true;
                 api.SetLightState(bulb);
-                bulb.hue = hue.CalculateHue(red, green, blue);
-                bulb.bri = hue.CalculateLum(red, green, blue);
-                bulb.sat = hue.CalculateSat(red, green, blue);
+               // bulb.hue = hue.CalculateHue(red, green, blue);
+                //bulb.bri = hue.CalculateLum(red, green, blue);
+                //bulb.sat = hue.CalculateSat(red, green, blue);
 
-                /*OLD CODE
+                bulb.hue = 0;
                 bulb.bri = 254; //brightness 0 - 254
                 bulb.sat = 255; //saturation 0 - 255
-                */
+                
 
                 api.SetLightValues(bulb);
             }
