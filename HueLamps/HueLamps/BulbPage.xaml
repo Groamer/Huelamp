@@ -24,13 +24,27 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="212" Margin="13,150,0,0" VerticalAlignment="Top" Width="335"/>
-        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="13,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332">
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="13,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Height="22">
             <Run Text="Pre-set colours"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
         <Image x:Name="image" HorizontalAlignment="Left" Height="133" Margin="210,11,0,0" VerticalAlignment="Top" Width="132" Source="Assets/On-off.jpg" Tapped="image_Tapped"/>
 
+        <Button x:Name="buttonColor1" HorizontalAlignment="Left" Margin="15,163,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor1_Click" Background="Magenta" BorderBrush="Black"/>
+        <Button x:Name="buttonColor2" HorizontalAlignment="Left" Margin="82,163,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor2_Click" Background="#FF8000FF" BorderBrush="Black"/>
+        <Button x:Name="buttonColor3" HorizontalAlignment="Left" Margin="149,163,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor3_Click" Background="Blue" BorderBrush="Black"/>
+        <Button x:Name="buttonColor4" HorizontalAlignment="Left" Margin="216,163,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor4_Click" Background="#FF0080FF" BorderBrush="Black"/>
+        <Button x:Name="buttonColor5" HorizontalAlignment="Left" Margin="283,163,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor5_Click" Background="Cyan" BorderBrush="Black"/>
+        <Button x:Name="buttonColor6" HorizontalAlignment="Left" Margin="15,228,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor6_Click" Background="#FF00FF80" BorderBrush="Black"/>
+        <Button x:Name="buttonColor7" HorizontalAlignment="Left" Margin="82,228,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor7_Click" Background="Lime" BorderBrush="Black"/>
+        <Button x:Name="buttonColor8" HorizontalAlignment="Left" Margin="149,228,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor8_Click" Background="#FF80FF00" BorderBrush="Black"/>
+        <Button x:Name="buttonColor9" HorizontalAlignment="Left" Margin="216,228,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor9_Click" Background="Yellow" BorderBrush="Black"/>
+        <Button x:Name="buttonColor10" HorizontalAlignment="Left" Margin="283,228,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor10_Click" Background="#FFFF8000" BorderBrush="Black"/>
+        <Button x:Name="buttonColor11" HorizontalAlignment="Left" Margin="15,293,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor11_Click" Background="Red" BorderBrush="Black"/>
+        <Button x:Name="buttonColor12" HorizontalAlignment="Left" Margin="82,293,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor12_Click" Background="#FFFF0080" BorderBrush="Black"/>
+        <Button x:Name="buttonColor13" HorizontalAlignment="Left" Margin="149,293,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor13_Click" BorderBrush="Black" Background="White"/>
+        <Button x:Name="buttonColor14" HorizontalAlignment="Left" Margin="216,293,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor14_Click" Background="Gray" BorderBrush="Black"/>
+        <Button x:Name="buttonColor15" HorizontalAlignment="Left" Margin="283,293,0,0" VerticalAlignment="Top" Height="60" Width="62" Click="buttonColor15_Click" Background="Black" BorderBrush="Black"/>
     </Grid>
 </Page>

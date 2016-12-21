@@ -593,3 +593,8 @@ C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug
 C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Vincent Brands\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\BulbPage.xbf
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\BulbPage.g.i.cs
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\BulbPage.g.cs
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\BulbPage.xaml
+C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\obj\x64\Debug\BulbPage.xbf
