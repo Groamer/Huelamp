@@ -26,7 +26,7 @@ namespace HueLamps
 
 
         public static ApplicationDataContainer LOCAL_SETTINGS = ApplicationData.Current.LocalSettings;
-        private API api = null;
+        public static API api = null;
         private ObservableCollection<Bulb> totalBulbs = new ObservableCollection<Bulb>();
         private bool appStarted = false;
         public static Bulb currentBulb;
@@ -41,14 +41,11 @@ namespace HueLamps
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-            //TEMP CODE FOR RGB. RGB MUST BE SET BY USER EVENTUALLY
-            int red = 255;
+            int red = 0;
             int green = 0;
-            int blue = 1;
-            //END TEMP CODE
+            int blue = 0;
 
-
-            api.Register();
+            await api.Register();
 
             ObservableCollection<Bulb> bulbs = await api.GetAllLights(totalBulbs);
             HueCalculator hue = new HueCalculator();
@@ -57,17 +54,10 @@ namespace HueLamps
             {
                 listBox.Items.Add("Lamp " + bulb.id);
                 bulb.on = true;
-                api.SetLightState(bulb);
+             
                 bulb.hue = hue.CalculateHue(red, green, blue);
                 bulb.bri = hue.CalculateLum(red, green, blue);
                 bulb.sat = hue.CalculateSat(red, green, blue);
-
-                /*OLD CODE
-                bulb.bri = 254; //brightness 0 - 254
-                bulb.sat = 255; //saturation 0 - 255
-                */
-
-                api.SetLightValues(bulb);
             }
             if (totalBulbs.Count > 0)
                 button.IsEnabled = false;
@@ -81,7 +71,7 @@ namespace HueLamps
         private async void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             currentBulb = totalBulbs.ElementAt(listBox.SelectedIndex);
-            Frame.Navigate(typeof(BulbPage), null);
+            Frame.Navigate(typeof(BulbPage), currentBulb);
 
         }
 
@@ -129,15 +119,6 @@ namespace HueLamps
                 }
             }
         }
-
-        private void fillList()
-        {
-            foreach (Bulb b in totalBulbs)
-            {
-                listBox.Items.Add("Lamp " + b.id);
-            }
-        }
-
 
         
     }
