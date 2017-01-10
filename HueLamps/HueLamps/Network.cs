@@ -25,8 +25,11 @@ namespace HueLamps
 			{
 				HttpClient client = new HttpClient();
 				HttpStringContent content = new HttpStringContent(json, Windows.Storage.Streams.UnicodeEncoding.Utf8, "application /json");
-				Uri uriLampState = new Uri("http://127.0.0.1:8000/api/" + path);
-				var response = await client.PutAsync(uriLampState, content).AsTask(cts.Token);
+
+                //Uri uriLampState = new Uri("http://127.0.0.1:8000/api/" + path);
+                Uri uriLampState = new Uri("http://145.48.205.33/api/iYrmsQq1wu5FxF9CPqpJCnm1GpPVylKBWDUsNDhB" + path);
+
+                var response = await client.PutAsync(uriLampState, content).AsTask(cts.Token);
 				if (!response.IsSuccessStatusCode)
 				{
 					return string.Empty;
@@ -41,7 +44,7 @@ namespace HueLamps
 			}
 		}
 
-
+        //set username
 		private async Task<String> Post(string path, string json)
 		{
 			var cts = new CancellationTokenSource();
@@ -52,8 +55,10 @@ namespace HueLamps
 				HttpClient client = new HttpClient();
 				HttpStringContent content = new HttpStringContent(json, Windows.Storage.Streams.UnicodeEncoding.Utf8, "application /json");
 
-				Uri uriLampState = new Uri("http://127.0.0.1:8000/api/" + path);
-				var response = await client.PostAsync(uriLampState, content).AsTask(cts.Token);
+                //Uri uriLampState = new Uri("http://127.0.0.1:8000/api/" + path);
+                Uri uriLampState = new Uri("http://145.48.205.33/api/iYrmsQq1wu5FxF9CPqpJCnm1GpPVylKBWDUsNDhB" + path);
+
+                var response = await client.PostAsync(uriLampState, content).AsTask(cts.Token);
 
 				if (!response.IsSuccessStatusCode)
 				{
@@ -70,7 +75,8 @@ namespace HueLamps
 				return string.Empty;
 			}
 		}
-
+        
+        //lampen opvragen
 		private async Task<String> Get(string path)
 		{
 			var cts = new CancellationTokenSource();
@@ -79,8 +85,10 @@ namespace HueLamps
 			try
 			{
 				HttpClient client = new HttpClient();
-				Uri uriLampState = new Uri("http://127.0.0.1:8000/api/" + path);
-				var response = await client.GetAsync(uriLampState).AsTask(cts.Token);
+                //Uri uriLampState = new Uri("http://127.0.0.1:8000/api/" + path);
+                Uri uriLampState = new Uri("http://145.48.205.33/api/iYrmsQq1wu5FxF9CPqpJCnm1GpPVylKBWDUsNDhB" + path);
+
+                var response = await client.GetAsync(uriLampState).AsTask(cts.Token);
 
 				if (!response.IsSuccessStatusCode)
 				{
@@ -111,7 +119,7 @@ namespace HueLamps
 				await new MessageDialog("Error while setting username. ….").ShowAsync();
 			return response;
 		}
-
+        
 		public async Task<String> AllLights()
 		{
 			var response = await Get($"{(String)MainPage.LOCAL_SETTINGS.Values["id"]}/lights");

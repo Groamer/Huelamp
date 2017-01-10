@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:24:57.568</Modified>
+      <Modified>2017-01-10T13:19:11.170</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\HueLamps.exe">
       <PackagePath>entrypoint\HueLamps.exe</PackagePath>
-      <Modified>2016-12-21T11:24:56.774</Modified>
+      <Modified>2017-01-10T13:19:09.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -506,7 +506,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\HueLamps.xr.xml">
       <PackagePath>HueLamps.xr.xml</PackagePath>
-      <Modified>2016-12-21T11:04:22.483</Modified>
+      <Modified>2017-01-10T13:19:09.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -514,11 +514,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-21T11:24:57.420</Modified>
+      <Modified>2017-01-10T13:19:10.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Tom Remeeus\Documents\GitHub\Huelamp\HueLamps\HueLamps\bin\x64\Debug\Core\HueLamps.exe">
       <PackagePath>HueLamps.exe</PackagePath>
-      <Modified>2016-12-21T11:24:57.566</Modified>
+      <Modified>2017-01-10T13:19:11.163</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
